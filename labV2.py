@@ -13,7 +13,7 @@ dbm = [-62,-61,-52.5,-50,-43,-40,-39,-38,-41.2,-45,-50.5,-66,-66,-65.5,-61,-54.5
 
 #formula de friis
 Pt = 0
-Gr = -1.75 #db
+Gr = -2.75 #db
 Gt = [] #dbm
 L = 20 * np.log( 4 * np.pi * 2.57 / 0.125) #dbm
 
@@ -42,6 +42,6 @@ plt.title("Diagrama de radiación")
 plt.xlabel("Radianes/Ganancia(dB)")
 plt.show()
 
-#print(Gt)
+print(Gt)
 for i in range(0,len(radio)):
     print("(" + str(round(radianes[i],2)) + "," + str(radio[i]) + ")\n")
